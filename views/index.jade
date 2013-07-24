@@ -1,0 +1,94 @@
+extends layout
+
+block content
+	body.index_bd
+		//top.jade
+		include includes/top
+		div.main_banner
+			div.main_banner_wrapper
+				div.main_banner_clipper
+					ul
+						- each doc in docs
+							li
+								a(href="http://whjx.game080.com/newsdetail.aspx?id=262",target="_blank")
+									img(src= doc.imgurl,width="1690",height="503")
+						- each doc in docs
+							li
+								a(href="http://whjx.game080.com/newsdetail.aspx?id=262",target="_blank")
+									img(src= doc.imgurl,width="1690",height="503")
+						- each doc in docs
+							li
+								a(href="http://whjx.game080.com/newsdetail.aspx?id=262",target="_blank")
+									img(src= doc.imgurl,width="1690",height="503")
+						//li
+							//a(href="http://whjx.game080.com/newsdetail.aspx?id=262",target="_blank")
+								//img(src= docs[0].imgurl,width="1690",height="503")
+						//li
+							//a(href="http://whjx.game080.com/newsdetail.aspx?id=262",target="_blank")
+								//img(src= docs[0].imgurl,width="1690",height="503")
+				p.prev_btn(title="上一张")
+				p.next_btn(title="下一张")
+			div.main_c_logo_wp
+				div.main_c_sptop_bg
+				h1.main_c_logo(title="王侯将相") 王侯将相
+		div.main_content_wp
+			div.main_content
+				div.main_c_picsbox
+					ul.main_c_pb_lt
+				b.main_cp_leftcorner
+				b.main_cp_rightcorner
+				div.main_c_newssh_wp.clearfix
+					div.main_quicklink.fl
+						div.main_ql_swp
+							div.main_aacwp
+								a.main_activeacount(onClick="waitForAvalible(this);") 账号激活
+							div.main_fdwp.clearfix
+								a.main_fdown.fl(onClick="waitForAvalible(this);") 客户端下载
+								a.main_reglink.fl(href="http://www.game080.com/Web/general_reg.aspx#http%3a%2f%2fwhjx.game080.com",target="_blank") 账户注册
+							div.clearfix
+								a.main_faq.fl(onClick="waitForAvalible(this);") 常见问题
+								a.main_accheck.fl(onClick="waitForAvalible(this);") 资格查询
+						b.main_cp_leftcorner
+						b.main_cp_rightcorner
+					div.main_c_newslist.fl
+						div.main_cn_nav
+							ul
+								li.active
+									a#one1(href="javascript:void(0);") 热点
+								li
+									a#one2(href="javascript:void(0);") 新闻
+								li
+									a#one3(href="javascript:void(0);") 公告
+								li
+									a#one4(href="javascript:void(0);") 媒体
+								li
+									a#one5(href="javascript:void(0);") 活动
+							a.more_btn(href="news.aspx") More+
+						div#con_one_1.main_cn_mlist
+						div#con_one_2.main_cn_mlist(style="display:none")
+						div#con_one_3.main_cn_mlist(style="display:none")
+						div#con_one_4.main_cn_mlist(style="display:none")
+						div#con_one_5.main_cn_mlist(style="display:none")
+					div.main_mlist.fl
+						div.news_bd_sc_othmedia
+							h2.news_h2tit
+								em.news_mainh2tit_bg 合作媒体&gt;&gt;
+							div.news_bd_sc_ombd
+								div.news_bd_sc_imgs
+									div.news_bd_sc_imgsclp
+										ul(style="left: -260px;")
+									b.prev_btn
+									b.next_btn
+								div.news_bd_sc_select
+									ul(style="height: 30px; overflow: hidden;")
+										li
+											|=合作媒体=
+											b
+						div.main_weiboqlink
+							a.main_wb_tc(href="http://e.t.qq.com/yinkuyouxi",target="_blank") 腾讯微博
+							a.main_wb_sina(href="http://e.weibo.com/u/2318678640",target="_blank") 新浪微博
+							a.main_wb_qq(href="http://wp.qq.com/wpa/qunwpa?idkey=35fb4f62f3e8152ec661eb4e25262166851b3de4d7ee22f66b26fdb583c16ef3",title="公会讨论群:321879348 官方客服群:321830552") 官方QQ群
+			//foot.jade
+			include includes/foot
+		//include scripts
+		include includes/scripts

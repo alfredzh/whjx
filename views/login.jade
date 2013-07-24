@@ -1,0 +1,86 @@
+extends layout
+
+block content
+	body
+		div.header
+			include includes/top
+		div.main_general_logo
+			div.main_c_logo_wp
+			h1.main_c_logo(title="王侯将相") 王侯将相
+		div.news_bd_wrapper
+			div.news_bd_maincon_wp.clearfix
+				div.reg_and_login
+					ul.reg_login_nav
+						if loginTab == "reg"
+							li 用户登录
+							li.active 通行证注册
+						else
+							li.active 用户登录
+							li 通行证注册
+					div.ral_mwp
+						div.login_wp
+							div.login_id.reg_gipt
+								span 账号：
+								input#log_name(type="text",autocomplete="off")
+								label(for="log_name") 6-13位字母,数字组合
+							div.login_pwd.reg_gipt
+								span 密码：
+								input#log_pwd(type="password")
+								label(for="log_pwd") 6-13位字母,数字组合
+							div.login_rcode.reg_gipt
+								span 验证码：
+								input#log_vcode(type="text",maxlength="4",autocomplete="off")
+								label(for="log_vcode") 请输入验证码
+								b
+									img(src="",border="0",width="76",height="32")
+									em.general_iptatt_ng 长额度不能小于2位！
+							div.login_subbtn
+								a(href="javascript:;") 登录
+						div.reg_wp(style="display:none;")
+							div.reg_id.reg_gipt
+								span 账号：
+								input#name(type="text",autocomplete="off")
+								label(for="name") 6-13位字母,数字组合
+								em.general_iptatt_ng 123
+							div.reg_pwd.reg_gipt
+								span 密码：
+								input#password(type="password")
+								label(for="password") 6-16位字母,数字组合
+								em.general_iptatt_ng
+							div.reg_repwd.reg_gipt
+								span 确认密码：
+								input#re_password(type="password")
+								label(for="re_password") 请确认密码
+								em.general_iptatt_ng
+							div.reg_mail.reg_gipt
+								span 邮箱：
+								input#email(type="text",autocomplete="off")
+								label(for="email") 请有效输入邮箱
+								em.general_iptatt_ng
+							div.reg_idatt 根据文化部《网络游戏管理暂行办法》规定，网络游戏用户须使用有效身份证件进行实名注册
+							div.reg_rname.reg_gipt
+								span 真实姓名：
+								input#realname(type="text",autocomplete="off")
+								label(for="realname") 请输入真实姓名
+								em.general_iptatt_ng 长额度不能小于2位！
+							div.reg_idnum.reg_gipt
+								span 身份证号码：
+								input#idcard(type="text",autocomplete="off")
+								label(for="idcard") 请输入身份证号码
+								em.general_iptatt_ng 长额度不能小于2位！
+							div.reg_rcode.reg_gipt
+								span 验证码：
+								input#vcode(type="text",maxlength="4",autocomplete="off")
+								label(for="vcode") 请输入验证码
+								b
+									img(src="",width="76",height="32")
+								em.general_iptatt_ng 长额度不能小于2位！
+							div.reg_protocal
+								input#prot_chk(type="checkbox")
+								label(for="prot_chk") 我已看过并同意
+								a(href="javascript:;") 《寅酷游戏网站服务使用协议》
+							div.reg_subbtn
+								a(href="javascript:;")提交
+		//include footer
+		include includes/foot
+	include includes/scripts

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items>
+	<main>
+		<pic name="video" id="0" xpos="0" ypos="0"></pic>
+		<pic name="video" id="1" xpos="3" ypos="0"></pic>
+		<pic name="snapshot" id="4" xpos="5" ypos="0"></pic>
+		<pic name="snapshot" id="0" xpos="5" ypos="3"></pic>
+		<pic name="snapshot" id="3" xpos="5" ypos="4"></pic>
+		<pic name="snapshot" id="1" xpos="4" ypos="3"></pic>
+		<pic name="snapshot" id="2" xpos="4" ypos="4"></pic>
+		<pic name="snapshot" id="5" xpos="4" ypos="2"></pic>
+		<pic name="mmplayer" id="1" xpos="0" ypos="3"></pic>
+		<pic name="mmplayer" id="3" xpos="2" ypos="3"></pic>
+		<pic name="mmplayer" id="2" xpos="4" ypos="5"></pic>
+		<pic name="mmplayer" id="0" xpos="0" ypos="5"></pic>
+		<pic name="mmplayer" id="4" xpos="2" ypos="5"></pic>
+		<pic name="mmplayer" id="8" xpos="0" ypos="7"></pic>
+		<pic name="mmplayer" id="7" xpos="2" ypos="7"></pic>
+		<pic name="mmplayer" id="10" xpos="4" ypos="7"></pic>
+		<pic name="mmplayer" id="12" xpos="0" ypos="9"></pic>
+		<pic name="mmplayer" id="11" xpos="2" ypos="9"></pic>
+		<pic name="mmplayer" id="13" xpos="4" ypos="9"></pic>
+	</main>
+	<video name="video" width="152" height="86"></video>
+	<snapshot name="snapshot" width="482" height="282"></snapshot>
+	<mmplayer name="mmplayer" width="317" height="184"></mmplayer>
+</items>

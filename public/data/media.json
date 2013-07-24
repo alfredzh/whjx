@@ -1,0 +1,25 @@
+{
+	"main":
+	[
+		{"name":"video","id":0,"xpos":0,"ypos":0},
+		{"name":"video","id":1,"xpos":3,"ypos":0},
+		{"name":"snapshot","id":0,"xpos":5,"ypos":3},
+		{"name":"snapshot","id":3,"xpos":5,"ypos":4},
+		{"name":"snapshot","id":1,"xpos":4,"ypos":3},
+		{"name":"snapshot","id":2,"xpos":4,"ypos":4},
+		{"name":"mmplayer","id":1,"xpos":0,"ypos":3},
+		{"name":"mmplayer","id":3,"xpos":2,"ypos":3},
+		{"name":"mmplayer","id":2,"xpos":4,"ypos":5},
+		{"name":"mmplayer","id":0,"xpos":0,"ypos":5},
+		{"name":"mmplayer","id":4,"xpos":2,"ypos":5},
+		{"name":"mmplayer","id":8,"xpos":0,"ypos":7},
+		{"name":"mmplayer","id":7,"xpos":2,"ypos":7},
+		{"name":"mmplayer","id":10,"xpos":4,"ypos":7},
+		{"name":"mmplayer","id":12,"xpos":0,"ypos":9},
+		{"name":"mmplayer","id":11,"xpos":2,"ypos":9},
+		{"name":"mmplayer","id":13,"xpos":4,"ypos":9}
+	],
+	"video":{"name":"video","width":"152","height":"86"},
+	"snapshot":{"name":"snapshot","width":"482","height":"282"},
+	"mmplayer":{"name":"mmplayer","width":"317","height":"184"}
+}

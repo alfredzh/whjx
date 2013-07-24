@@ -1,0 +1,36 @@
+{
+	"imglink":
+	[
+		{"link":"http://games.qq.com/","imgsrc":"images/corp/tc.png"},
+		{"link":"http://www.yzz.cn/","imgsrc":"images/corp/yzz.png"},
+		{"link":"http://www.pcgames.com.cn/","imgsrc":"images/corp/PCG.png"},
+		{"link":"http://www.131.com/","imgsrc":"images/corp/131.png"},
+		{"link":"http://game.163.com/","imgsrc":"images/corp/163.png"},
+		{"link":"http://game.china.com/","imgsrc":"images/corp/zhw.png"},
+		{"link":"http://www.17173.com/","imgsrc":"images/corp/17173.png"},
+		{"link":"http://www.52pk.com","imgsrc":"images/corp/52pk.png"},
+		{"link":"http://www.duowan.com/","imgsrc":"images/corp/dy.png"},
+		{"link":"http://games.sina.com.cn/","imgsrc":"images/corp/sina.png"}
+	],
+	"txtlink":
+	[
+		{"link":"http://www.uuu9.com","des":"游久"},
+		{"link":"http://www.1t1t.com","des":"网游先锋"},
+		{"link":"http://www.9u.com/","des":"九游网"},
+		{"link":"http://www.766.com/","des":"766"},
+		{"link":"http://www.7mgame.com/","des":"齐名游戏网"},
+		{"link":"http://www.17673.com","des":"17673"},
+		{"link":"http://game.yesky.com/","des":"天极网"},
+		{"link":"http://www.aipai.com/","des":"爱拍网"},
+		{"link":"http://www.92wy.com","des":"万宇在线"},
+		{"link":"http://wangyou.cngba.com/","des":"玩家网"},
+		{"link":"http://www.i5wan.com/","des":"爱玩网"},
+		{"link":"http://www.517joy.com/","des":"游戏族"},
+		{"link":"http://www.ofuns.com/","des":"爱上游戏网"},
+		{"link":"http://www.52yxyx.com/index.html","des":"英雄游戏"},
+		{"link":"http://www.kaifu.com/","des":"开服网"},
+		{"link":"http://www.doyo.cn/","des":"逗游"},
+		{"link":"http://game.longhoo.net/","des":"龙虎游戏"},
+		{"link":"http://www.dingyx.com/","des":"顶游资讯"}
+	]
+}

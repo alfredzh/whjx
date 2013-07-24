@@ -1,0 +1,407 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* css reset start*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre, 
+form,fieldset,input,textarea,p,blockquote,th,td {padding:0;margin:0;} 
+table {border-collapse:collapse;border-spacing:0;} 
+fieldset,img {border:0;}
+body {font:12px/1.5 Microsoft Yahei,"宋体",tahoma, arial, simsun;}
+a, a:link, a:visited {text-decoration:none;outline:none;cursor:pointer;}
+address,caption,cite,code,dfn,em,strong,th,var {font-weight:normal;font-style:normal;} 
+ol,ul {list-style:none;} 
+caption,th {text-align:left;} 
+h1,h2,h3,h4,h5,h6 {font-weight:normal;font-size:100%;} 
+q:before,q:after {content:'';} 
+abbr,acronym {border:0;}
+input {outline:none;}
+i {font-style:normal;}
+textarea {font:12px/1.5 Microsoft Yahei,"宋体",tahoma, arial, simsun;}
+/* css reset end*/
+
+.fl {float:left;}
+.fr {float:right;}
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+.clearfix{*display:inline-block;_height:1%;}
+.mg_bottom_10 {margin-bottom:10px !important;}
+.mg_bottom_25 {margin-bottom:25px !important;}
+
+body {background:#080404;}
+.main_content_wp {width:100%;background:url(../images/index_bd_bg.jpg) top center;}
+.main_content {width:1070px;/*height:500px;*/position:relative;margin:0 auto;}
+.header_nav {width:1070px;height:54px;margin:0 auto;background:url(../images/topnav_bg.jpg) repeat-x;position:relative;}
+.header_nav li {width:141px;float:left;background:url(../images/topnav_li_bd.jpg) right center no-repeat;}
+.header_nav li a {width:95px;height:55px;display:block;color:white;text-align:center;overflow:hidden;}
+.header_nav li a:hover ,.header_nav li.active a {background:url(../images/topnav_hoverbg.jpg) no-repeat;color:#ff8a00;}
+.header_nav li a span ,.header_nav li a em {display:block;line-height:55px;}
+.header_nav li a span {font:bold 14px Microsoft Yahei;margin-top:8px;}
+.header_nav li a em {font:bold 12px Arial;}
+li.header_nav_audio {width:18px;position:absolute;text-indent:-9999em;right:0;top:0;background:none;}
+li.header_nav_audio b {width:18px;margin-top:20px;display:block;cursor:pointer;background:url(../images/topnav_autdiobg.jpg) no-repeat;}
+li.header_nav_audio b.off {background-position:-18px 0;}
+.header_globalnav_wp {width:100%;min-width:1070px;height:46px;background:url(../images/top_global_nav.jpg) repeat-x;}
+.header_globalnav {width:1070px;margin:0 auto;background:url(../images/top_global_nav.jpg) repeat-x;}
+.header_gn_login ,.header_gn_reg ,.header_gn_fav {height:31px;line-height:31px;float:left;display:block;text-align:center;margin:8px 10px 0;}
+.header_gn_login {width:56px;color:#0018ff;background:url(../images/top_global_btns.png) 0 -62px no-repeat;}
+.header_gn_reg {width:56px;color:#ff0000;background:url(../images/top_global_btns.png) 0 -62px no-repeat;}
+.header_gn_fav {width:96px;color:black;background:url(../images/top_global_btns.png) no-repeat;}
+.header_gn_fav:hover {background-position:0 -31px;}
+.header_gn_login:hover ,.header_gn_reg:hover {background-position:0 -93px;}
+.header_gn_news {line-height:46px;font-size:14px;float:left;height:46px;margin-left:10px;}
+
+.main_banner {width:100%;min-width:1070px;margin:0 auto;overflow:hidden;height:504px;position:relative;/*_width:1070px !important;*/}
+.main_banner_wrapper {min-width:1070px;overflow:hidden;}
+.main_banner_clipper {/*width:1690px;*/width:1690px;height:503px;position:absolute;top:0;left:50%;margin-left:-845px;overflow:hidden;}
+.main_banner_clipper ul {width:8000px;left:-1690px;position:absolute;}
+.main_banner_clipper ul li {float:left;}
+.main_banner_wrapper .prev_btn ,.main_banner_wrapper .next_btn {width:197px;height:95px;display:block;background:url(../images/banner_switch_btns.jpg) no-repeat;position:absolute;top:185px;z-index:100;cursor:pointer;box-shadow:0 0 25px black;}
+.main_banner_wrapper .next_btn {background-position:0 -95px;right:-154px;border-radius:5px 0 0 5px;}
+.main_banner_wrapper .prev_btn {left:-154px;border-radius:0 5px 5px 0;}
+.main_c_logo_wp {width:572px;left:50%;margin-left:-286px;position:absolute;bottom:0;z-index:100;}
+.main_c_logo {width:572px;height:281px;margin:0 auto;background:url(../images/main_logo_png8.png) no-repeat;text-indent:-9999em;position:relative;z-index:300;margin:0 auto;}
+.main_c_sptop_bg {width:1690px;height:148px;position:absolute;bottom:0;left:50%;margin-left:-845px;background:url(../images/main_c_topsp_bg.png) no-repeat;z-index:200;}
+.main_c_picsbox {width:1045px;height:177px;margin:10px auto 10px;border:1px solid #776257;background:url(../images/pics_box_bg.jpg) repeat;position:relative;}
+.main_cp_leftcorner ,.main_cp_rightcorner {width:97px;height:51px;position:absolute;display:block;top:-10px;}
+.main_cp_leftcorner {background:url(../images/main_pics_lcorner.png) no-repeat;left:-10px;}
+.main_cp_rightcorner {background:url(../images/main_pics_rcorner.png) no-repeat;right:-10px;}
+.main_c_pb_lt li {float:left;margin:6px 0 0 5px;}
+.main_c_pb_lt li a {width:253px;height:163px;display:block;border:1px solid #716055;}
+.main_c_newssh_wp {width:1045px;margin:0 auto;}
+.main_c_newsmpic {width:330px;height:286px;background:url(../images/pics_box_bg.jpg) repeat;border:1px solid #716055;position:relative;margin-right:18px;}
+.main_c_newsmpic a {width:316px;height:273px;margin:5px auto;display:block;border:1px solid #716055;position:relative;}
+.main_c_newsmpic a em {width:306px;height:41px;line-height:20px;padding:5px;background:black;background:rgba(0,0,0,0.8);position:absolute;color:green;bottom:0;left:0;}
+.main_cnmp_date {position:absolute;right:5px;}
+.main_c_newsmpic a:hover em {text-decoration:underline;}
+.prev_img_prew {width:108px;height:77px;display:block;overflow:hidden;position:absolute;top:9px;left:32px;display:none;}
+.next_img_prew {width:108px;height:77px;display:block;overflow:hidden;position:absolute;top:9px;left:58px;display:none;}
+/*.prev_img_prew {width:108px;height:77px;display:block;overflow:hidden;margin:9px 0 0 32px;}*/
+/*.next_img_prew {width:108px;height:77px;display:block;overflow:hidden;margin:9px 0 0 58px;}*/
+.prev_img_prew img ,.next_img_prew img{position:relative;left:50%;margin-left:-129px;}
+.main_c_newslist {width:430px;margin-right:10px;zoom:1;}
+.main_mlist {width:330px;}
+.main_cn_nav {width:430px;height:83px;overflow:hidden;position:relative;background:url(../images/news_m_tit.png) left bottom no-repeat;}
+.main_cn_nav ul {width:424px;height:32px;padding:9px 0 0 4px;border:1px solid #6f5d52;overflow:hidden;background:url(../images/pics_box_bg.jpg) repeat;}
+.main_cn_nav ul li {float:left;margin-right:10px;}
+.main_cn_nav ul li a {width:57px;height:26px;display:block;text-align:center;color:white;font:16px Microsoft Yahei;line-height:26px;}
+.main_cn_nav ul li.active a {border:1px solid #750000;background:#a70000;}
+.main_cn_nav .more_btn {color:white;font:16px Arial;line-height:26px;position:absolute;top:8px;right:25px;}
+.main_cn_mlist {color:white;font-size:16px;}
+.main_cn_mlist li {height:20px;padding:10px 0;line-height:20px;border-bottom:1px dashed #372828;}
+.main_cn_mlist li i {width:43px;height:20px;text-align:center;display:block;float:left;margin-right:15px;}
+i.main_cn_notice {background:#ff1800;}
+i.main_cn_news {background:#0075c0;}
+i.main_cn_media {background:#e34aff;}
+i.main_cn_activity {background:#168301;}
+.main_cn_mlist li a {color:white;}
+.main_cn_mlist li a:hover {text-decoration:underline;}
+.main_cn_pagecount {width:696px;height:24px;}
+.main_cn_pagecount ol {text-align:center;}
+.main_cn_pagecount li {margin:0 8px;display:inline-block;*display:inline;}
+.main_cn_pagecount a {font-size:16px;color:white;}
+.main_cn_pagecount a:hover {text-decoration:underline;}
+.main_cn_pagecount .active a {color:red;}
+.main_quicklink {width:262px;height:287px;position:relative;border:1px solid #776257;margin-right:10px;zoom:1;}
+.main_activeacount ,.main_fdown ,.main_reglink ,.main_faq ,.main_accheck {background:url(../images/main_ql.png) no-repeat;text-indent:-9999em;display:block;opacity:0.8;}
+.main_activeacount:hover ,.main_fdown:hover ,.main_reglink:hover ,.main_faq:hover ,.main_accheck:hover {opacity:1;}
+.main_activeacount {width:238px;height:113px;}
+.main_fdown {width:115px;height:55px;background-position:0 -113px;margin-right:7px;}
+.main_reglink {width:115px;height:55px;background-position:-115px -113px;}
+.main_faq {width:115px;height:55px;background-position:0 -168px;margin-right:7px;}
+.main_accheck {width:115px;height:55px;background-position:-115px -168px;}
+.main_ql_swp {width:238px;height:249px;border:1px solid #bda08d;margin:4px auto;padding:27px 7px 0;}
+.main_aacwp ,.main_fdwp {margin-bottom:6px;}
+.news_mainh2tit_bg {padding-left:6px;height:41px;line-height:45px;background:url(../images/pics_box_bg.jpg) repeat;display:block;border:1px solid #7a6459;}
+.main_weiboqlink {height:70px;overflow:hidden;margin-top:15px;position:absolute;bottom:0;}
+.main_weiboqlink a {display:block;background:url(../images/main_weibolink.png) no-repeat;float:left;margin:0 13px;text-align:center;line-height:120px;color:white;}
+.main_weiboqlink a:hover {text-decoration:underline;}
+a.main_wb_tc {width:49px;height:48px;}
+a.main_wb_sina {width:49px;height:48px;background-position:-49px 0;}
+a.main_wb_qq {width:138px;height:48px;background-position:-98px 0;}
+.main_ask_wp {width:865px;margin:0 auto;background:url(../images/ask_mbg_r.jpg) repeat;overflow:hidden;zoom:1;color:#7f5d41;font-size:16px;}
+.main_ask_btmbg {width:100%;height:34px;background:url(../images/ask_gbottombg.jpg) no-repeat;}
+.main_ask_que {margin:60px 60px 0 300px;}
+.main_ask_que li {display:none;margin-bottom:25px;}
+.main_ask_que p {margin-bottom:20px;}
+.main_ask_que input {margin-right:5px;}
+.main_ask_que label {margin-right:20px;display:block;}
+.main_ask_quetop {background:url(../images/ask_topbg.jpg) no-repeat;overflow:hidden;zoom:1;}
+.progress_btns {width:420px;margin:0 auto;}
+.progress_btns a {width:161px;height:46px;text-align:center;color:white;line-height:45px;float:left;display:block;background:url(../images/ask_btns.png) no-repeat;}
+.progress_btns a:hover {background-position:0 -46px;}
+.progress_btns .prev_que {visibility:hidden;margin-right:98px;}
+.ask_toptitbg_wp {width:100%;height:201px;min-width:1070px;margin:0 auto;overflow:hidden;position:relative;}
+.ask_toptitbg {width:1689px;height:201px;position:absolute;top:0;left:50%;margin-left:-844px;background:url(../images/ask_toptitbg.jpg) no-repeat;}
+.ask_progress {width:823px;height:119px;margin:20px auto 0;background:url(../images/ask_progress_bg.png) no-repeat;text-indent:-9999em;position:relative;}
+.ask_pg_homelink {width:80px;height:120px;display:block;position:relative;z-index:999;}
+.ask_pg_hoverbg {width:823px;height:119px;background:url(../images/ask_progress_bg.png) right -134px no-repeat;position:absolute;top:0;right:4px;}
+.main_ask_pinfotop {background:url(../images/ask_infotopbg.jpg) no-repeat;overflow:hidden;zoom:1;}
+.ask_pinfo_submit a {width:161px;height:46px;display:block;margin:0 auto;text-align:center;line-height:46px;color:white;background:url(../images/ask_btns.png) no-repeat;}
+.ask_pinfo_submit a:hover {background-position:0 -46px;}
+.pinfo_form {width:620px;margin:50px auto 20px;font-size:14px;}
+.pinfo_form li {overflow:hidden;zoom:1;line-height:36px;border-bottom:1px dashed #bfae92;}
+.pinfo_form li input {margin-right:5px;}
+.ask_pinfo_dis select {width:100px;}
+.main_ask_donetop {background:url(../images/ask_donetopbg.jpg) no-repeat;overflow:hidden;}
+.main_ask_donetop_txt {width:390px;height:265px;margin:85px auto 0;}
+.main_ask_donetop_txt h3 {font-size:40px;text-align:center;margin-bottom:20px;}
+.main_ask_done_btn {width:215px;height:30px;font-size:14px;color:white;text-align:center;line-height:30px;display:block;background:url(../images/ask_btns.png) 0 -92px no-repeat;margin:50px auto 0;}
+.download_patchlist {width:690px;margin:15px auto 0;}
+.download_patchlist th {height:25px;color:#ccc;text-align:center;width:175px;}
+.download_patchlist td {height:25px;color:#787878;text-align:center;}
+.download_patchlist td a {padding:0 10px;color:#a70000;}
+.download_patchlist td a:hover {text-decoration:underline;}
+.checkac_nav_wp {position:relative;}
+.checkac_nav {top:2px;left:190px;position:absolute;}
+.checkac_nav li {float:left;margin:0 5px;width:80px;height:26px;cursor:pointer;text-align:center;line-height:26px;display:block;color:white;font-size:16px;}
+.checkac_nav li a {color:white;}
+.checkac_nav li.active {background:#a70000;border:1px solid #750000;position:relative;top:-1px;}
+.checkac_activesuccess {display:none;}
+.checkac_activesuccess p {text-align:center;color:#face00;font-size:36px;}
+.checkac_activesuccess a {width:134px;height:37px;margin:10px auto;text-align:center;line-height:37px;font-size:14px;color:white;display:block;background:url(../images/checkac_btns.png) 0 -37px no-repeat;}
+
+.news_bd_wrapper {width:100%;background:url(../images/index_bd_bg.jpg) 50% 0 no-repeat;}
+.news_bd_maincon_wp {width:1070px;margin:0 auto;}
+.news_bd_maincon {width:696px;min-height:100px;margin-right:42px;}
+.news_bd_sc_ad {margin-bottom:10px;}
+.news_bd_sc_ad li {margin-bottom:11px;padding:2px;border:1px solid #766256;background:url(../images/pics_box_bg.jpg) repeat;}
+.news_bd_sc_ad li.last {margin:0;}
+.news_bd_sc_ad li img {display:block;margin:0 auto;border:1px solid #766256;}
+.news_bd_sc_ombd {width:322px;padding:2px;border:1px solid #766256;background:url(../images/pics_box_bg.jpg) repeat;}
+.news_bd_sc_wechat {position:relative;}
+.news_bd_sc_wechat p {position:absolute;bottom:5px;right:5px;}
+.news_bd_sc_ombd_txts {width:318px;text-indent:10px;color:white;line-height:30px;position:relative;border:1px solid #766256;}
+.news_bd_sc_ombd_txts ul {overflow:hidden;}
+.news_bd_sc_ombd_txts ul li {width:104px;padding-left:55px;float:left;}
+.news_bd_sc_ombd_txts ul li a {color:white;}
+.news_bd_sc_ombd_txts ul li a:hover {text-decoration:underline;}
+.news_bd_sc_imgs {height:83px;margin-bottom:2px;position:relative;border:1px solid #766256;}
+.news_bd_sc_imgs .prev_btn {left:8px;}
+.news_bd_sc_imgs .next_btn {right:8px;background-position:-20px 10px;}
+.news_bd_sc_imgs b {width:18px;height:30px;display:block;cursor:pointer;position:absolute;top:25px;background:url(../images/news_othmedia_btns.png) 0 10px no-repeat;}
+.news_bd_sc_select {width:320px;height:30px;border:1px solid #766256;position:relative;z-index:999;}
+.news_bd_sc_select b {width:15px;height:15px;display:block;background:url(../images/news_othmedia_btns_d.png) no-repeat;position:absolute;right:25px;top:8px;cursor:pointer;}
+.news_bd_sc_select ul {height:30px;overflow:hidden;background:url(../images/pics_box_bg.jpg) repeat;}
+.news_bd_sc_select ul li {height:30px;line-height:30px;padding-left:10px;cursor:pointer;color:white;}
+.news_bd_sc_select ul li a {color:white;display:block;}
+.news_bd_sc_select ul li a:hover {text-decoration:underline;}
+.news_bd_sc_imgsclp {width:260px;height:83px;margin:0 auto;position:relative;overflow:hidden;}
+.news_bd_sc_imgsclp ul {width:99999px;position:absolute;}
+.news_bd_sc_imgsclp ul li {float:left;}
+.news_h2tit {width:330px;height:83px;font:28px Microsoft Yahei;line-height:28px;margin-bottom:3px;color:#a70000;background:url(../images/news_tit.png) center bottom no-repeat;}
+.news_list_tit {height:74px;font:28px Microsoft Yahei;line-height:28px;color:#a70000;background:url(../images/news_m_tit.png) center bottom no-repeat;}
+.main_cn_mlwp {position:relative;}
+.main_general_logo {width:100%;min-width:1070px;height:290px;margin:0 auto;overflow:hidden;position:relative;background:url(../images/gene_titbg.jpg) 50% 0 no-repeat;}
+
+.gamedetail_main_wp {width:1070px;margin:0 auto;}
+.gamedetail_tit {width:1070px;height:80px;line-height:28px;color:#a70000;font:28px Microsoft Yahei;background:url(../images/gamedetail_tit.png) center bottom no-repeat;}
+.gamedetail_whjx {}
+.gamedetail_whjx textarea {width:100%;height:370px;resize:none;line-height:24px;font-size:14px;padding:10px 0;color:white;background:none;border:none;outline:none;overflow:hidden;}
+.gamedetail_countrywar {position:relative;margin-bottom:100px;}
+.gamedetail_countrywar textarea {width:100%;height:120px;color:white;font-size:14px;line-height:24px;padding:10px 0;border:none;background:none;resize:none;outline:none;overflow:hidden;}
+/*.gamedetail_chracter {position:absolute;top:-398px;right:50px;z-index:9999;}*/
+.gamedetail_jobs_detail {height:230px;overflow:hidden;position:relative;}
+.gamedetail_jobs_detail li {opacity:0;filter:alpha(opacity=0);position:absolute;top:0;left:0;}
+
+.gamedetail_jobs_detail h6 {color:#ff0000;font-size:24px;margin-bottom:10px;}
+.gamedetail_jobs_detail p {color:white;font-size:14px;margin-bottom:30px;text-indent:20pt;}
+.gamedetail_jobs_detail em {display:block;color:#ff0000;font-size:14px;text-indent:20pt;}
+.gamedetail_jobs_list {width:745px;overflow:hidden;margin:20px auto 40px;zoom:1;}
+.gamedetail_jobs_list li {width:149px;height:340px;float:left;background:url(../images/gamedetail_jobs_bg.png) no-repeat;overflow:hidden;position:relative;cursor:pointer;}
+.gamedetail_jobs_list li a {position:relative;top:5px;left:7px;}
+.gamedetail_jobs_list li.active b {opacity:1;filter:alpha(opacity=100);}
+.gamedetail_mediashow {width:980px;min-height:1000px;margin:0 auto;position:relative;}
+.gamedetail_ms_hd {position:relative;margin-bottom:20px;}
+.gamedetail_ms_nav {position:absolute;left:200px;top:5px;}
+.gamedetail_ms_nav li {float:left;margin-right:10px;}
+.gamedetail_ms_nav a {width:79px;height:26px;display:block;font:16px Microsoft Yahei;line-height:26px;color:white;text-align:center;}
+.gamedetail_ms_nav .active a {background:#a70000;border:1px solid #750000;}
+.mmplayer {position:absolute;cursor:pointer;}
+.video {position:absolute;cursor:pointer;}
+.snapshot {position:absolute;cursor:pointer;}
+.mmplayer b {width:25px;height:22px;display:none;position:absolute;top:50%;left:50%;margin:-11px 0 0 -12px;background:url(../images/orgpic_ico.png) no-repeat;_background:none;_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/orgpic_ico.png');}
+.video b {width:64px;height:64px;display:none;position:absolute;top:50%;left:50%;margin:-32px 0 0 -32px;background:url(../images/video_ico.png) no-repeat;_background:none;_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/video_ico.png');}
+.snapshot b {width:25px;height:24px;display:none;position:absolute;top:50%;left:50%;margin:-12px 0 0 -12px;background:url(../images/wallpaper_ico.png) no-repeat;_background:none;_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/wallpaper_ico.png');}
+.hoverimg {width:149px;height:340px;display:block;position:absolute;background:url(../images/gamedetail_jobs_hoverbg.png) no-repeat;top:0;left:0;opacity:0;cursor:pointer;filter:alpha(opacity=0);}
+.newsdetail_maintxt {font-size:16px;color:white;}
+h3.newsdetail_subtit {color:#a70000;margin:25px 0 5px;font-weight:bold;font-size:16px;}
+h6.newsdetail_subtit {color:#a70000;margin:25px 0 5px;font-weight:bold;font-size:28px;text-align:center;}
+
+.download_btns {overflow:hidden;}
+.download_btns a {width:196px;height:93px;float:left;display:block;opacity:0.8;filter:alpha(opacity=80);margin-top:10px;background:url(../images/download_linkimg.png) no-repeat;text-indent:-9999em;}
+.download_btns a:hover {opacity:1;filter:alpha(opacity=100);}
+a.download_btns_xl {background-position:0 -93px;margin-left:50px;}
+a.download_btns_qqxf {background-position:0 -186px;margin-left:50px;}
+.download_fileinfo {margin-top:10px;}
+.download_fileinfo p {line-height:30px;}
+.download_fileinfo span {margin-right:30px;color:#ccc;}
+.download_fileinfo span em {color:#787878;}
+.download_tit {border-bottom:2px solid #d20000;font-size:20px;color:#a70000;margin-top:20px;}
+
+.checkac_bd_tab li {overflow:hidden;}
+.checkac_warn {color:#a70000;border-top:1px dashed #372828;overflow:hidden;}
+.checkac_warn dt {margin-top:10px;}
+.checkac_warn h4 {font-size:24px;margin-bottom:5px;}
+.checkac_warn dd {line-height:24px;font-size:16px;}
+.checkac_bd_wp {height:425px;}
+.checkac_usernamechk {text-align:center;margin-top:140px;color:white;}
+.checkac_accountsub {width:92px;height:37px;margin:0 15px;border:none;cursor:pointer;color:white;font:bold 16px Microsoft Yahei;background:url(../images/checkac_btns.png) no-repeat;}
+.checkac_activesuccess {margin-top:135px;}
+.checkac_keynotice {color:#bb0101;margin-top:30px;border-bottom:1px dashed #372828;}
+.checkac_keynotice li {font-size:14px;margin:8px 0;}
+.checkac_subactivecode {text-align:center;margin-top:20px;}
+.checkac_subactivecode input {width:134px;height:37px;font:bold 16px Microsoft Yahei;color:white;cursor:pointer;border:none;background:url(../images/checkac_btns.png) 0 -37px no-repeat;}
+.checkac_entercode {color:white;margin-top:50px;}
+.checkac_ec_code span ,.checkac_ec_server span ,.checkac_ec_rcode span {width:285px;float:left;text-align:right;}
+.checkac_ec_code ,.checkac_ec_server ,.checkac_ec_rcode {line-height:22px;margin-bottom:10px;}
+.checkac_ec_server select {width:150px;}
+.checkac_ec_codeipt {width:100px;}
+.checkac_ec_rcodeipt {width:70px;float:left;margin-right:10px;}
+.checkac_ec_rcodeimg {line-height:20px;}
+.checkac_ec_rcodeimg img {float:left;margin-right:10px;}
+.checkac_ec_rcodeimg a {color:white;}
+.checkac_ec_rcodeimg a:hover {text-decoration:underline;}
+
+.gamealldata_bdwp {overflow:hidden;}
+/*.gamealldata_bdwp {width:297px;margin-right:20px;}*/
+.gamealldata_nav li {}
+.gamealldata_bdwp_sub {width:297px;margin-right:20px;}
+.gamealldata_sublinks {overflow:hidden;margin-bottom:30px;}
+.gamealldata_sublinks a {width:297px;height:58px;line-height:58px;font-size:25px;color:white;text-align:center;display:block;background:url(../images/gamealldata_nbtns.png) no-repeat;opacity:0.8;filter:alpha(opacity=80);margin:0 auto 1px;cursor:pointer;}
+.gamealldata_sublinks a:hover {opacity:1;alpha(opacity=100);}
+.gamealldata_nav {}
+.gamealldata_nav dl {overflow:hidden;}
+.gamealldata_nav dl dt {width:296px;height:74px;margin-bottom:5px;cursor:pointer;text-indent:-9999em;}
+.gamealldata_nav dl dd a {width:148px;line-height:30px;text-align:center;font-size:14px;color:white;float:left;cursor:pointer;}
+.gamealldata_nav dl dd a:hover {text-decoration:underline;}
+.gi_nav_gameintro dt {background:url(../images/gi_nav_gameintro.png) no-repeat;}
+.gi_nav_gamesytem dt {background:url(../images/gi_nav_gamesytem.png) no-repeat;}
+.gi_nav_gamesp dt {background:url(../images/gi_nav_gamesp.png) no-repeat;}
+.gi_nav_gamemap dt {background:url(../images/gi_nav_gamemap.png) no-repeat;}
+.gi_nav_gameinstance dt {background:url(../images/gi_nav_gameinstance.png) no-repeat;}
+.gamealldata_bdwp_main {width:750px;color:white;overflow:hidden;background:rgba(0,0,0,0.5);}
+.gamealldata_maintit {height:80px;font-size:28px;color:#a70000;margin-bottom:20px;background:url(../images/gamedetail_tit.png) 0 bottom no-repeat;}
+
+.jobs_sextab_img {position:relative;}
+.jobs_sextab_img img {position:absolute;top:0;left:0;}
+.jobs_sextab_des {min-height:450px;_height:450px;}
+.jobs_mtitle {font-size:28px;color:#cb0101;border-bottom:2px solid #cb0101;}
+.gamedata_jobsnav {overflow:hidden;zoom:1;}
+.gamedata_jobsnav li {float:left;color:#ff0000;margin-right:5px;font-size:24px;}
+.gamedata_jobsnav li a {color:#ff0000;}
+.gamedata_jobsnav li a:hover {text-decoration:underline;}
+.jobs_sextab {width:80px;margin:0 auto;text-indent:-9999em;overflow:hidden;}
+.jobs_sextab li {width:40px;height:40px;float:left;}
+.jobs_sextab a {width:40px;height:40px;display:block;float:left;position:relative;background:url(../images/jobs_sexbtns.png) no-repeat;}
+li.active a.jobs_sex_m {background-position:-40px 0;}
+li.active a.jobs_sex_fm {background-position:-40px -40px;}
+a.jobs_sex_fm {background-position:0 -40px;}
+.jobs_sextab_wp {width:234px;margin-right:10px;}
+.jobs_describe {width:500px;margin-top:40px;}
+.jobs_minfo {margin-bottom:20px;}
+.jobs_minfotit h5 {float:left;font-size:24px;}
+.jobs_minfotit span {line-height:45px;}
+.jobs_minfotit {color:#ff0000;overflow:hidden;}
+.jobs_weapons {color:#ff0000;margin-bottom:20px;}
+.jobs_weapons h6 {float:left;font-size:16px;}
+.jobs_weapons span {line-height:25px;}
+.jobs_sp {color:#ff0000;margin-bottom:20px;}
+.jobs_sp h6 {font-size:16px;}
+.jobs_sp_detail li {width:245px;float:left;}
+.jobs_sp_detail li span {width:90px;display:block;float:left;}
+.jobs_sp_detail li b {float:left;display:block;width:110px;position:relative;}
+.jobs_sp_detail li b em {width:80px;height:16px;display:block;position:absolute;top:0;left:35px;background:url(../images/jobs_stars.png) no-repeat;}
+.jobs_sp_detail li b.jobs_star_4 em {width:80px;}
+.jobs_sp_detail li b.jobs_star_3 em {width:61px;}
+.jobs_sp_detail li b.jobs_star_2 em {width:40px;}
+.jobs_sp_detail li b.jobs_star_1 em {width:19px;}
+.jobs_xd h6 {font-size:16px;color:#ff0000;}
+.jobs_video {width:427px;height:311px;margin:0 auto;background:url(../images/jobs_video_bg.jpg) no-repeat;}
+
+.gd_hero_wrapper {width:100%;background:url(../images/gd_hero_bg.jpg) 50% 0% no-repeat;overflow:hidden;}
+.gd_hero_maincon_wp {width:1070px;height:1000px;margin:0 auto;background:url(../images/gd_hero_m_bg.jpg) 50% 0% no-repeat;overflow:hidden;}
+.gd_hero_dbtab_wp {width:1070px;height:710px;position:relative;}
+.gd_hero_sp_wp {}
+.gd_hero_nav_list {width:912px;height:135px;margin:0 auto;overflow:hidden;position:relative;}
+.gd_hero_nav_list ul {position:absolute;left:0;top:5px;width:5000px;}
+.gd_hero_nav_list li {margin:0 12px;float:left;cursor:pointer;position:relative;}
+.gd_hero_nav_list li b {width:126px;height:123px;display:block;background:url(../images/gd_head_hover.png) no-repeat;position:absolute;top:-0;left:-4px;opacity:0;}
+.gd_hero_nav_list li.active b {opacity:1;}
+.gd_hero_dbtab {position:relative;}
+.gd_hero_dbtab li {position:absolute;top:0;left:0;display:none;}
+.gd_hero_activity {position:absolute;bottom:20px;right:10px;}
+.gd_hero_nav_wp {position:relative;zoom:1;}
+.gd_hero_nav_wp .next ,.gd_hero_nav_wp .prev {width:39px;height:90px;display:block;background:url(../images/gd_hero_btns.png) no-repeat;position:absolute;top:18px;cursor:pointer;zoom:1;}
+.gd_hero_nav_wp .prev {left:35px;}
+.gd_hero_nav_wp .next {right:35px;background-position:-41px 0;}
+
+.music_a_wp {background:url(../images/music_art_bg.jpg) 50% 0 no-repeat;}
+.music_a_mcontent {width:1070px;margin:0 auto;overflow:hidden;background:url(../images/music_art_mid_bg.jpg) no-repeat;}
+.music_a_xxtit {width:151px;height:103px;text-indent:-9999em;background:url(../images/music_xx_logo.png) no-repeat;}
+.music_a_titwp {overflow:hidden;zoom:1;}
+.music_a_mtit {width:893px;height:82px;color:#a70000;font-size:28px;background:url(../images/gamedetail_tit.png) left bottom no-repeat;}
+.music_lyrics_wp {width:461px;}
+.music_lyrics {width:461px;height:170px;overflow:hidden;position:relative;background:rgba(0,0,0,0.7);background:black;}
+.music_lyrics textarea {width:360px;line-height:25px;position:absolute;top:0;left:50px;background:none;color:white;border:none;outline:none;resize:none;overflow-y:visible;}
+.music_lyrics_scroll {width:18px;min-height:50px;*height:70px;position:absolute;top:0;right:5px;display:block;*background:gray;background:rgba(150,150,150,0.6);border-radius:15px;}
+.music_lyrics_scroll:hover {background:rgba(200,200,200,0.9);}
+.music_song_introtxt {width:568px;height:170px;background:rgba(0,0,0,0.7);*background:black;color:white;}
+.music_song_introtxt p {width:460px;margin:0 auto;font-size:14px;line-height:22px;padding:5px 0;}
+.music_song_intro {width:568px;overflow:hidden;margin-right:20px;}
+.music_h3tit {border-bottom:2px solid #b10000;color:#b40000;font-size:24px;}
+.music_h3tit span {font-size:16px;line-height:20px;}
+.music_a_singer ,.music_a_video {width:568px;overflow:hidden;}
+.music_video_div {width:568px;overflow:hidden;}
+.music_video_wp p {color:white;text-align:center;}
+.music_video {width:428px;height:312px;margin:0 auto;overflow:hidden;background:url(../images/music_video_bg.png) no-repeat;}
+.music_video_playbtn {width:400px;height:285px;display:block;margin:14px auto;background:black;opacity:0.3;filter:alpha(opacity=30);}
+.music_video_playbtn:hover {opacity:0;filter:alpha(opacity=0);}
+.music_a_singerlist ul {width:504px;margin:0 auto;overflow:hidden;color:white;text-align:center;}
+.music_a_singerlist li {float:left;width:156px;margin:10px 6px;_display:inline;}
+.music_a_singerlist li p {margin:5px 0;}
+.music_a_singerlist li a {width:113px;height:26px;color:white;line-height:26px;font-size:16px;margin:0 auto;display:block;background:url(../images/music_vote_btns.jpg) no-repeat;}
+.music_a_singerlist li a:hover {background-position:0 -26px;}
+.music_a_singerlist {padding:10px 0;background:rgba(0,0,0,0.7);_background:black;}
+.music_video_popup {width:100%;z-index:9999;position:absolute;top:0;}
+.mv_popup_bg {width:100%;height:1400px;background:black;opacity:0.7;filter:alpha(opacity=70);position:fixed;_position:absolute;top:0;}
+.mv_pupup_view {position:fixed;_position:absolute;top:50%;left:50%;margin-top:-240px;margin-left:-427px;z-index:10000;text-align:center;_top:500px;_margin-top:0;}
+
+/*.ral_mwp {border:2px solid #a70000;}*/
+.login_wp {width:500px;margin:0 auto;padding:30px 0;overflow:hidden;}
+.reg_wp {width:500px;margin:0 auto;padding:30px 0;overflow:hidden;}
+.reg_gipt {height:65px;position:relative;}
+.reg_gipt span {width:130px;line-height:30px;text-align:right;float:left;}
+.reg_gipt label {display:block;line-height:32px;color:#ccc;font-size:18px;position:absolute;top:0;left:140px;z-index:100;cursor:text;}
+.reg_gipt span {font-size:18px;color:white;}
+.reg_gipt input {width:295px;height:30px;padding-left:5px;}
+.reg_gipt em {height:30px;display:block;margin-left:130px;padding-left:30px;line-height:30px;color:white;font-size:14px;color:#F33;background:url(../images/g_form_att.png) no-repeat;opacity:0;filter:alpha(opacity=0);}
+.reg_gipt b {position:absolute;left:355px;top:1px;cursor:pointer;}
+.reg_idatt {margin:20px 0;color:white;}
+.reg_protocal {color:white;margin:10px 0;}
+.reg_protocal a {color:#F33;}
+.reg_protocal a:hover {text-decoration:underline;}
+.login_subbtn ,.reg_subbtn {margin:10px 0;}
+.login_subbtn a ,.reg_subbtn a {width:92px;height:37px;text-align:center;line-height:37px;color:white;font-size:16px;background:url(../images/checkac_btns.png) no-repeat;display:block;margin:0 auto;}
+em.general_iptatt_ng {background-position:0 -30px;}
+em.general_iptatt_ok {background-position:0 0;}
+.reg_login_nav {width:268px;margin:0 auto;overflow:hidden;}
+.reg_login_nav li {width:134px;height:37px;line-height:37px;cursor:pointer;text-align:center;font-size:18px;color:white;margin-bottom:20px;font-weight:bold;float:left;background:url(../images/checkac_btns.png) 0 -37px no-repeat;opacity:0.5;filter:alpha(opacity=50);}
+.reg_login_nav li.active {opacity:1;filter:alpha(opacity=100);}
+
+.popup_video_wp ,.popup_snapshot_wp {width:100%;display:none;position:absolute;top:0;z-index:99999;}
+.popup_video {width:610px;margin:350px auto 0;position:relative;z-index:999;}
+.popup_snapshot {width:100%;margin:350px 0;text-align:center;position:relative;z-index:999;}
+.popup_snapshot_close {width:26px;height:26px;display:block;text-indent:-9999em;cursor:pointer;background:url(../images/popup_closebtn.jpg) no-repeat;position:absolute;opacity:0;filter:alpha(opacity=0);z-index:999;}
+.popup_video_close {width:26px;height:26px;display:block;right:-26px;text-indent:-9999em;cursor:pointer;background:url(../images/popup_closebtn.jpg) no-repeat;position:absolute;z-index:999;}
+.popup_bg {width:100%;position:absolute;top:0;background:black;opacity:0.8;filter:alpha(opacity=80);}
+
+.footer {width:1040px;margin:10px auto 0;color:#860f05;position:relative;}
+.foot_healthywarn {border-bottom:1px solid #790e05;line-height:30px;text-align:center;}
+.foot_healthywarn span {margin:0 10px;}
+.foot_copyright ,.foot_contacts ,.foot_address {padding-left:150px;line-height:30px;}
+.foot_copyright a {margin-left:5px;}
+.bottom_logo {width:85px;height:80px;left:30px;top:35px;background:url(../images/yk_logo.png) no-repeat;_background:none;_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/yk_logo.png');position:absolute;cursor:pointer;}
+.footer a {color:#860f05;text-decoration:underline;}
+.footer a:hover {}
+
+.popup_snapshot img {-moz-transform:matrix(0,0,0,0,0,0);-webkit-transform:matrix(0,0,0,0,0,0);-o-transform:matrix(0,0,0,0,0,0);filter:  progid:DXImageTransform.Microsoft.Matrix(M11=0,M12=0,M21=0,M22=0,SizingMethod='auto expand');opacity:0;}
+

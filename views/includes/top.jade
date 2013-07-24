@@ -1,0 +1,28 @@
+div.header
+	div.header_globalnav_wp
+		div.header_globalnav
+			div.fr
+				a.header_gn_login(href="/login?tab=login") 登录
+				a.header_gn_reg(href="/login?tab=reg") 注册
+				a.header_gn_fav(href="javascript:;",onClick="addfavorite();") 加入收藏
+			div.fl
+				a(href="http://www.game080.com/",target="_blank")
+					img(src="images/top_global_navlogo.png",width="180",height="37")
+			div.header_gn_news
+				a(href="",style="color:#080404") 《王侯将相》兵家职业进阶前瞻
+	ul.header_nav
+		- var navnode = [["index","/","首页","Home"],["news","/news","新闻中心","News"],["gamealldata","/gamealldata","游戏资料","Game Meterial"],["gamedata_hero","/gamedata_hero","英雄","heroes"],["mediacenter","/mediacenter","视听盛宴","Vision"]]
+		each item in navnode
+			if nav != item[0]
+				li
+					a(href=item[1])
+						span= item[2]
+						em= item[3]
+			else
+				li.active
+					a(href=item[1])
+						span= item[2]
+						em= item[3]
+		//li class="header_nav_audio">
+			//<b title="关闭背景音乐">关闭背景音乐</b>
+			//div class="mp3"><embed src="music/whjx.mp3" autostart="true" loop="true" hidden="true"

@@ -1,0 +1,2 @@
+﻿function g(obj){return (typeof obj=='object')?obj:document.getElementById(obj);}
+function setTab(name,cursel,n){for(i=1;i<=n;i++){var menu=g(name+i);var con=g("con_"+name+"_"+i);menu.className=i==cursel?"hover"+cursel:"";con.style.display=i==cursel?"block":"none"; } }
