@@ -22,7 +22,7 @@ app.use(express.logger('dev'));
 app.use(express.compress());
 app.use(express.bodyParser());
 app.use(express.cookieParser());
-//app.use(express.session({secret : "@5%s2kdgx"}));
+app.use(express.cookieSession({secret : "@5%s2kdgx"}));//, cookie:{maxAge:3000}
 app.use(express.methodOverride());
 app.use(app.router);
 app.use(express.static(path.join(__dirname, 'public')));

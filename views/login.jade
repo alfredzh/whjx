@@ -18,38 +18,39 @@ block content
 							li.active 用户登录
 							li 通行证注册
 					div.ral_mwp
-						div.login_wp
+						form#login_wp.login_wp
 							div.login_id.reg_gipt
 								span 账号：
-								input#log_name(type="text",autocomplete="off")
+								input#log_name(type="text",autocomplete="off",name="log_name")
 								label(for="log_name") 6-13位字母,数字组合
+								p
 							div.login_pwd.reg_gipt
 								span 密码：
-								input#log_pwd(type="password")
+								input#log_pwd(type="password",name="log_pwd")
 								label(for="log_pwd") 6-13位字母,数字组合
 							div.login_rcode.reg_gipt
 								span 验证码：
-								input#log_vcode(type="text",maxlength="4",autocomplete="off")
+								input#log_vcode(type="text",maxlength="4",autocomplete="off",name="rcode")
 								label(for="log_vcode") 请输入验证码
 								b
 									img(src="",border="0",width="76",height="32")
 									em.general_iptatt_ng 长额度不能小于2位！
 							div.login_subbtn
-								a(href="javascript:;") 登录
-						div.reg_wp(style="display:none;")
+								input(type="submit",value="登录")
+						div#reg_wp.reg_wp(style="display:none;")
 							div.reg_id.reg_gipt
 								span 账号：
-								input#name(type="text",autocomplete="off")
+								input#reg_id(type="text",autocomplete="off")
 								label(for="name") 6-13位字母,数字组合
 								em.general_iptatt_ng 123
 							div.reg_pwd.reg_gipt
 								span 密码：
-								input#password(type="password")
+								input#reg_pwd(type="password")
 								label(for="password") 6-16位字母,数字组合
 								em.general_iptatt_ng
 							div.reg_repwd.reg_gipt
 								span 确认密码：
-								input#re_password(type="password")
+								input#reg_repassword(type="password")
 								label(for="re_password") 请确认密码
 								em.general_iptatt_ng
 							div.reg_mail.reg_gipt
@@ -70,8 +71,8 @@ block content
 								em.general_iptatt_ng 长额度不能小于2位！
 							div.reg_rcode.reg_gipt
 								span 验证码：
-								input#vcode(type="text",maxlength="4",autocomplete="off")
-								label(for="vcode") 请输入验证码
+								input#rcode(type="text",maxlength="4",autocomplete="off")
+								label(for="rcode") 请输入验证码
 								b
 									img(src="",width="76",height="32")
 								em.general_iptatt_ng 长额度不能小于2位！

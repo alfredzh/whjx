@@ -380,7 +380,8 @@ a.jobs_sex_fm {background-position:0 -40px;}
 .reg_protocal a {color:#F33;}
 .reg_protocal a:hover {text-decoration:underline;}
 .login_subbtn ,.reg_subbtn {margin:10px 0;}
-.login_subbtn a ,.reg_subbtn a {width:92px;height:37px;text-align:center;line-height:37px;color:white;font-size:16px;background:url(../images/checkac_btns.png) no-repeat;display:block;margin:0 auto;}
+.login_subbtn input ,.reg_subbtn a {width:92px;height:37px;text-align:center;cursor:pointer;line-height:37px;border:none;color:white;font-size:16px;background:url(../images/checkac_btns.png) no-repeat;display:block;margin:0 auto;}
+p.error {height:30px;display:block;margin-left:130px;padding-left:30px;line-height:30px;color:white;font-size:14px;color:#F33;background:url(../images/g_form_att.png) no-repeat;opacity:0;filter:alpha(opacity=0);}
 em.general_iptatt_ng {background-position:0 -30px;}
 em.general_iptatt_ok {background-position:0 0;}
 .reg_login_nav {width:268px;margin:0 auto;overflow:hidden;}
